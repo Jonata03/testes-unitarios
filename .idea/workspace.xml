@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="466307c3-c71a-4a6f-a770-f409a3d816ca" name="Changes" comment="" />
+    <list default="true" id="466307c3-c71a-4a6f-a770-f409a3d816ca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
@@ -22,6 +29,7 @@
   "keyToString": {
     "Application.LocacaoService.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/jonat/OneDrive/Área de Trabalho/estudos/AZ/testes-unitario",
     "node.js.detected.package.eslint": "true",
@@ -53,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716418026949</updated>
-      <workItem from="1716418028353" duration="721000" />
+      <workItem from="1716418028353" duration="3040000" />
     </task>
     <servers />
   </component>

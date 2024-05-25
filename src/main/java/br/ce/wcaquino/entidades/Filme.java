@@ -1,5 +1,7 @@
 package br.ce.wcaquino.entidades;
 
+import java.util.Objects;
+
 public class Filme {
 
 	private String nome;

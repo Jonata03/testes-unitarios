@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d8c4600-22ee-4562-ae5f-c0cf75339389" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/testes-unitarios.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/exceptions/FilmeSemEstoqueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/exceptions/LocadoraException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/servicos/AssertTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/exceptions/NaoPodeDividirPorZeroException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/servicos/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/servicos/CalculadoraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/servicos/CalculoValorLocacaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/servicos/OrdemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/entidades/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/entidades/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/entidades/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/entidades/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/entidades/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/entidades/Locacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/entidades/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/entidades/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/entidades/Filme.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/entidades/Filme.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/entidades/Locacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/entidades/Locacao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,7 @@
   "keyToString": {
     "Application.LocacaoService.executor": "Run",
     "JUnit.AssertTest.test.executor": "Run",
+    "JUnit.CalculadoraTest.executor": "Run",
     "JUnit.LocacaoService.executor": "Run",
     "JUnit.LocacaoService.teste.executor": "Run",
     "JUnit.LocacaoServiceTest.executor": "Run",
@@ -53,13 +55,15 @@
     "JUnit.LocacaoServiceTest.teste.executor": "Run",
     "JUnit.LocacaoServiceTest.testeLocacao_filmeSemEstoque_2.executor": "Run",
     "JUnit.LocacaoServiceTest.testeLocacao_usuarioVazio.executor": "Run",
+    "JUnit.OrdemTest.executor": "Run",
     "JUnit.TesteJunit.executor": "Run",
     "Maven.TestesUnitarios [clean].executor": "Run",
     "Maven.TestesUnitarios [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/jonata.araujo/Área de Trabalho/testes-unitarios/src/main/java/br/ce/wcaquino/servicos",
     "last_opened_file_path": "/home/jonata.araujo/Área de Trabalho/testes-unitarios",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -73,6 +77,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.ce.wcaquino.exceptions" />
+      <recent name="br.ce.wcaquino.servicos" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="br.ce.wcaquino.servicos" />
     </key>
@@ -81,7 +89,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.LocacaoServiceTest">
-    <configuration name="AssertTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculadoraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestesUnitarios" />
       <extension name="coverage">
         <pattern>
@@ -90,9 +98,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
-      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.AssertTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.CalculadoraTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,7 +109,7 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
-          <option name="ENABLED" value="false" />
+          <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
@@ -124,22 +131,6 @@
       <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
       <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
       <option name="METHOD_NAME" value="teste" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocacaoServiceTest.testeLocacao_filmeSemEstoque_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestesUnitarios" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
-      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
-      <option name="METHOD_NAME" value="testeLocacao_filmeSemEstoque_2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,6 +162,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrdemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestesUnitarios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.OrdemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TesteJunit" type="JUnit" factoryName="JUnit">
       <module name="TestesUnitarios" />
       <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
@@ -183,19 +189,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TesteJunit" />
+      <item itemvalue="JUnit.CalculadoraTest" />
+      <item itemvalue="JUnit.OrdemTest" />
       <item itemvalue="JUnit.LocacaoServiceTest" />
-      <item itemvalue="JUnit.LocacaoServiceTest.testeLocacao_filmeSemEstoque_2" />
       <item itemvalue="JUnit.LocacaoServiceTest.testeLocacao_usuarioVazio" />
-      <item itemvalue="JUnit.AssertTest.test" />
       <item itemvalue="JUnit.LocacaoServiceTest.teste" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LocacaoServiceTest" />
+        <item itemvalue="JUnit.CalculadoraTest" />
+        <item itemvalue="JUnit.OrdemTest" />
         <item itemvalue="JUnit.LocacaoServiceTest.testeLocacao_usuarioVazio" />
         <item itemvalue="JUnit.LocacaoServiceTest.teste" />
-        <item itemvalue="JUnit.LocacaoServiceTest.testeLocacao_filmeSemEstoque_2" />
-        <item itemvalue="JUnit.AssertTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +222,8 @@
       <option name="presentableId" value="Default" />
       <updated>1716466613721</updated>
       <workItem from="1716466614955" duration="6846000" />
-      <workItem from="1716473605168" duration="10971000" />
+      <workItem from="1716473605168" duration="11646000" />
+      <workItem from="1716552899992" duration="16745000" />
     </task>
     <servers />
   </component>

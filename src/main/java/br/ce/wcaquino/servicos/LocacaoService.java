@@ -18,6 +18,7 @@ public class LocacaoService {
 
     private LocacaoDAO dao;
     private SPCService spcService;
+    private EmailService emailService;
 
     public Locacao alugarFilme(Usuario usuario, List<Filme> filmes) throws FilmeSemEstoqueException, LocadoraException {
         if (usuario == null) {
@@ -32,9 +33,16 @@ public class LocacaoService {
                 throw new FilmeSemEstoqueException();
             }
         }
-        if (spcService.possuiNegativacao(usuario)) {
+        boolean negativado;
+        try {
+            negativado = spcService.possuiNegativacao(usuario);
+        } catch (Exception e) {
+            throw new LocadoraException("Problemas com SPC, tente novamente!");
+        }
+        if (negativado) {
             throw new LocadoraException("Usuario Negativado");
         }
+
         Locacao locacao = new Locacao();
         locacao.setFilmes(filmes);
         locacao.setUsuario(usuario);
@@ -43,7 +51,7 @@ public class LocacaoService {
         //Entrega no dia seguinte
         Date dataEntrega = new Date();
         dataEntrega = adicionarDias(dataEntrega, 1);
-        if(DataUtils.verificarDiaSemana(dataEntrega, Calendar.SUNDAY)){
+        if (DataUtils.verificarDiaSemana(dataEntrega, Calendar.SUNDAY)) {
             dataEntrega = adicionarDias(dataEntrega, 1);
         }
         locacao.setDataRetorno(dataEntrega);
@@ -75,12 +83,23 @@ public class LocacaoService {
 
         return locacao;
     }
-    public void setLocacaoDAO(LocacaoDAO dao){
-        this.dao=dao;
+
+    public void notificarAtrasos() {
+        List<Locacao> locacoes = dao.obterLocacoesPendentes();
+        for (Locacao locacao : locacoes) {
+            if (locacao.getDataRetorno().before(new Date())) {
+                emailService.notificarAtraso(locacao.getUsuario());
+            }
+        }
     }
 
-    public void setSpcService(SPCService spc){
-        spcService = spc;
+    public void prorrogarLocacao(Locacao locacao, int dias) {
+        Locacao novaLocacao = new Locacao();
+        novaLocacao.setUsuario(locacao.getUsuario());
+        novaLocacao.setFilmes(locacao.getFilmes());
+        novaLocacao.setDataLocacao(new Date());
+        novaLocacao.setDataRetorno(DataUtils.obterDataComDiferencaDias(dias));
+        novaLocacao.setValor(locacao.getValor() * dias);
+        dao.salvar(novaLocacao);
     }
-
 }
